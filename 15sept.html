@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="favicon/official logo/ux.png">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        body {
+            background-image: url("img/background.jpg");
+            background-size: 100% 100%;
+            color: black
+        }
+
+        div.static {
+            position: static;
+            border: solid 10px rgb(104, 177, 148);
+            width: 275px;
+        }
+
+        /* website */
+        div.fixed1 {
+            position: fixed;
+            bottom: 35px;
+            font-size: 25px;
+            text-align: center;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+        }
+
+        /*contact  */
+        div.fixed2 {
+            position: fixed;
+
+            bottom: 142px;
+            font-size: 25px;
+            text-align: center;
+            right: 19px;
+            width: 40px;
+            height: 40px;
+        }
+
+        /* mail */
+        div.fixed3 {
+            position: fixed;
+
+            bottom: 90px;
+            font-size: 25px;
+            text-align: center;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+        }
+
+        div.relative {
+            position: relative;
+            border: 10px ridge rgb(82, 145, 120);
+            left: 550px;
+            right: 300px;
+            top: 300px;
+            bottom: 0px;
+            background-color: coral;
+            width: 350px;
+        }
+
+        div.rel {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 10px ridge rgb(156, 245, 156);
+            color: black;
+            left: 20px;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            width: 200px;
+            height: 100px;
+            border: 10px ridge forestgreen;
+
+        }
+
+        div.stiky {
+            position: sticky;
+            border: thick double #32a1ce;
+            border-radius: 50px;
+            background-color: rgb(203, 206, 216);
+            color: rgb(23, 159, 93);
+            top: 10px;
+            left: 600px;
+            width: 300px;
+            height: 40px;
+            font-size: 27px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section>
+        <br><br><br><br><br>
+        <div class="stiky">CSS POSITIONING</div>
+        <div><center><br><br>
+            <img src="img/artificial-intelligence-4389372.jpg" alt="top-image" width=800px></center>
+        </div><br><br><br>
+        <div>
+            <h1>Position: Fixed</h1>
+            <p>practically it can be seen in bottom right corner.</p>
+        </div>
+
+        <div>
+            <h1>About</h1>
+
+            <p>
+                The element is removed from the normal document flow, and no space is created for the element in the
+                page layout. It is positioned relative to the initial containing block established by the
+                viewport, except when one of its ancestors has a transform,perspective, or
+                filter property set to something other than none (see the CSS Transforms Spec), in which case that
+                ancestor behaves as the containing block. (Note that there are browser
+                inconsistencies with perspective and filter contributing to containing block formation.) Its final
+                position is determined by the values of top, right, bottom, and left.
+
+                This value always creates a new stacking context. In printed documents, the element is placed in the
+                same position on every page.
+            </p>
+            <p>
+                -------------These lines are for making the page scrolable.--------------</p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus porro quos cum hic
+                assumenda, inventore iste. Enim modi repellendus hic dignissimos fugiat. Praesentium tenetur molestias
+                fuga omnis perspiciatis quidem dicta obcaecati perferendis minus, iste ex dolore doloremque? Architecto
+                possimus cumque asperiores veniam! Iusto tempora, odit quis laboriosam excepturi ut at impedit.
+                Quibusdam id maiores illum iusto nobis nihil ab itaque iste ratione vero possimus animi earum deleniti
+                eos recusandae nulla neque officiis amet quaerat dignissimos fugit, quo non. Asperiores modi rem alias.
+                Enim eaque consequuntur aliquam debitis. Voluptatibus repudiandae tenetur obcaecati ea officiis
+                veritatis asperiores nemo culpa aut quae.</p>
+
+
+        </div><br><br>
+        <h1>Position: Static</h1>
+        <p>The element is positioned according to the normal flow of the document. The top, right, bottom, left, and
+            z-index properties have no effect. This is the default value.</p>
+        <span>
+            <p>for e.g.,
+            <div class="static">
+                The element with static POSITIONING!
+            </div>
+            </p>
+        </span>
+        <br><br>
+        <h1>Position: Relative</h1>
+
+        <p>The element is positioned according to the normal flow of the document, and then offset relative to itself
+            based on the values of top, right, bottom, and left. The offset does not affect the position of any other
+            elements; thus, the space given for the element in the page layout is the same as if position were static.
+
+            This value creates a new stacking context when the value of z-index is not auto. Its effect on
+            table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.
+
+        </p>
+        <p>for e.g., scroll down to the bottom.</p>
+        <div class="relative">
+            This is the container element with reletive position
+        </div><br><br>
+        <div class="fixed1" align="center">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_main">
+                <img src="https://seeklogo.com/images/M/mdn-logo-6DB9B0093F-seeklogo.com.png" alt="website"
+                    width=33px></a>
+        </div>
+        <div class="fixed2">
+            <a href="tel:8851105489" target="_main">
+                <img src="https://houseofcode.co.uk/wp-content/themes/yootheme/cache/support-small-a37fd8d6.png"
+                    alt="contactus" width="47px">
+            </a>
+        </div>
+        <div class="fixed3">
+            <a href="mailto:rishabhtrip1891@gmail.com" target="_main">
+                <img src="http://icons.iconarchive.com/icons/froyoshark/enkel/512/Mail-icon.png" width="39px"
+                    alt="mail us">
+            </a>
+
+
+        </div>
+        <h1>Position: Absolute</h1>
+        <p>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+
+            This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely positioned boxes do not collapse with other margins.</p>
+            <p>for e.g.,</p>
+            <div class="rel"> This container elment of the relative position.
+                <div class="absolute">
+                    This os the container element with absolute position.
+
+                </div> </div>
+        
+
+    </section>
+</body>
+
+</html>
